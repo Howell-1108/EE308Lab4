@@ -1235,7 +1235,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "GoToSingleGame",
+    "_name": "GoToMultiGame",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1

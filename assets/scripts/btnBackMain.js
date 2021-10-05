@@ -38,6 +38,7 @@ cc.Class({
         function onTouchCancel (event){
             this.stopAllActions();
             this.runAction(self.scaleUpAction);
+            this.node.active = false;
         }
         this.node.on('touchstart', onTouchDown, this.node);
         this.node.on('touchend', onTouchUp, this.node);
