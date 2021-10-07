@@ -102,7 +102,6 @@ cc.Class({
     },
 
 
-
     rollingNow: function () {
         // 摇骰子
         diceBuck = [0, 0, 0, 0, 0, 0, 0];
