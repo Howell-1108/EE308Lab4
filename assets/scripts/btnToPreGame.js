@@ -1,17 +1,13 @@
-var btnPressed = 0;
 cc.Class({
     extends: cc.Component,
-    
 
-     properties: {
+    properties: {
         pressedScale: 1,
-        transDuration: 0,
-
+        transDuration: 0
     },
 
     // LIFE-CYCLE CALLBACKS:
 
-    
     onLoad: function () {
         var self = this;
         // var audioMng = cc.find('Menu/AudioMng') || cc.find('Game/AudioMng')
@@ -30,22 +26,16 @@ cc.Class({
         function onTouchUp (event) {
             this.stopAllActions();
             this.runAction(self.scaleUpAction);
-            cc.find("Canvas").getComponent("game").spawnNewDice();
-
-           
-
-    }
+            cc.director.loadScene('preGame');
+        }
         function onTouchCancel (event){
             this.stopAllActions();
             this.runAction(self.scaleUpAction);
         }
-
-
         this.node.on('touchstart', onTouchDown, this.node);
         this.node.on('touchend', onTouchUp, this.node);
         this.node.on('touchcancel', onTouchCancel, this.node);
     },
-
 
     start () {
 
