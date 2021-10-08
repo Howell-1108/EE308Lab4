@@ -1,10 +1,3 @@
-// Learn cc.Class:
-//  - https://docs.cocos.com/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-
 cc.Class({
     extends: cc.Component,
 
@@ -13,14 +6,8 @@ cc.Class({
         transDuration: 0
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
     onLoad: function () {
         var self = this;
-        // var audioMng = cc.find('Menu/AudioMng') || cc.find('Game/AudioMng')
-        // if (audioMng) {
-        //     audioMng = audioMng.getComponent('AudioMng');
-        // }
         self.initScale = this.node.scale;
         self.button = self.getComponent(cc.Button);
         self.scaleDownAction = cc.scaleTo(self.transDuration, self.pressedScale);
@@ -48,6 +35,4 @@ cc.Class({
     start () {
 
     },
-
-    // update (dt) {},
 });

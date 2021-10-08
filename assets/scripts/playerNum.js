@@ -1,5 +1,10 @@
 window.gPlayerNum = {
     playerNum: null,
+    ZYPlayer: null,
+    ZYLevel: null,
+    playerPriceAry: null,
+    priceRemain: null,
+    playerNow: null,
 };
 cc.Class({
     extends: cc.Component,
@@ -32,12 +37,21 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function () {
+
+        gPlayerNum.playerNow = 1;
+        // 初始化游戏人数
 		gPlayerNum.playerNum = 1;
-        // var audioMng = cc.find('Menu/AudioMng') || cc.find('Game/AudioMng')
-        // if (audioMng) {
-        //     audioMng = audioMng.getComponent('AudioMng');
-        // }
+        
+        // 初始化玩家获得奖项
+        gPlayerNum.playerPriceAry = [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]
+        ,[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]];
+
+        // 初始化状元
+        gPlayerNum.ZYPlayer = 0;
+        gPlayerNum.ZYLevel = 0;
        
+        // 初始化剩余奖项
+        gPlayerNum.priceRemain = [32,16,8,4,2];
     },
 
     start () {

@@ -10,10 +10,6 @@ cc.Class({
 
     onLoad: function () {
         var self = this;
-        // var audioMng = cc.find('Menu/AudioMng') || cc.find('Game/AudioMng')
-        // if (audioMng) {
-        //     audioMng = audioMng.getComponent('AudioMng');
-        // }
         self.initScale = this.node.scale;
         self.button = self.getComponent(cc.Button);
         self.scaleDownAction = cc.scaleTo(self.transDuration, self.pressedScale);
