@@ -8,11 +8,9 @@ cc.Class({
             default: null
         },
     },
-
     play: function () {
         this.diceAudio.play();
     },
-
     pause: function () {
         this.diceAudio.pause();
     },

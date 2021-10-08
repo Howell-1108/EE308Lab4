@@ -20,6 +20,7 @@ cc.Class({
 			type: cc.Label
 		},
 
+        // 玩家
         player2:{
 			default: null,
 			type: cc.Label
@@ -112,6 +113,5 @@ cc.Class({
     },
 
     start () {
-
     },
 });

@@ -201,7 +201,7 @@
       "array": [
         0,
         0,
-        1662.7687752661222,
+        226.1964250051907,
         0,
         0,
         0,
@@ -1599,7 +1599,7 @@
       "width": 1080,
       "height": 1920
     },
-    "_fitWidth": false,
+    "_fitWidth": true,
     "_fitHeight": true,
     "_id": "59Cd0ovbdF4byw5sbjJDx7"
   },
@@ -1770,7 +1770,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "2f6wihkNZFSaI3v4hKrds0"
+    "_id": "d0rshr4L9Pk4Q88hrIYyD8"
   },
   {
     "__type__": "cc.Label",
@@ -1804,7 +1804,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "d5ZylTYqNGk6unNMXscvfx"
+    "_id": "dbAvTNbXBHFo4Jf5qUwyDa"
   },
   {
     "__type__": "cc.RichText",

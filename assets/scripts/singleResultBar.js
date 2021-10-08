@@ -1,17 +1,19 @@
+// 每条result的脚本
 cc.Class({
     extends: cc.Component,
 
     properties: {
+        // 这是第几个玩家的result条
         playerNo:{
 			default: 0,
 			type: cc.Integer
 		},
 
+        // 玩家的各个属性
         icon:{
 			default: null,
 			type: cc.Sprite
 		},
-
         yixiu:{
 			default: null,
 			type: cc.Label
@@ -37,6 +39,7 @@ cc.Class({
 
 
     onLoad: function () { 
+        // 调试信息
         console.log(gPlayerNum.playerPriceAry[this.playerNo][0],
             gPlayerNum.playerPriceAry[this.playerNo][1],
             gPlayerNum.playerPriceAry[this.playerNo][2],
@@ -60,13 +63,8 @@ cc.Class({
             this.sanhong.enabled = false;
             this.duitang.enabled = false;
         }
-
-        
     },
-
+    
     start () {
-
     },
-
-    // update (dt) {},
 });

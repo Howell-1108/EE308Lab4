@@ -6,8 +6,6 @@ cc.Class({
         transDuration: 0
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
     onLoad: function () {
         var self = this;
         self.initScale = this.node.scale;
@@ -16,7 +14,6 @@ cc.Class({
         self.scaleUpAction = cc.scaleTo(self.transDuration, self.initScale);
         function onTouchDown (event) {
             this.stopAllActions();
-            // if (audioMng) audioMng.playButton();
             this.runAction(self.scaleDownAction);
         }
         function onTouchUp (event) {
@@ -36,6 +33,4 @@ cc.Class({
     start () {
 
     },
-
-    // update (dt) {},
 });
